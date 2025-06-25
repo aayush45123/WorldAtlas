@@ -17,7 +17,7 @@ const Hero = () => {
           <button className="start-exploring">Start Exploring </button>
         </div>
         <div className="hero-right">
-          <img src="/hero.jpg" alt="" />
+<img src="/WorldAtlas/hero.jpg" alt="" />
         </div>
       </div>
       <Title
