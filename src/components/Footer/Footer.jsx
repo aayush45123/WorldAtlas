@@ -1,29 +1,35 @@
 import React from "react";
 import "./Footer.css";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-section about">
-          <h2>ECOMMERCE</h2>
-          <p>Your one-stop shop for the best fashion and lifestyle products.</p>
+          <h2>WORLD ATLAS</h2>
+          <p>
+            Explore countries, flags, and facts from around the globe in one
+            unified platform.
+          </p>
         </div>
 
         <div className="footer-section links">
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <NavLink to="/" end>
+                Home
+              </NavLink>
             </li>
             <li>
-              <a href="/about">About</a>
+              <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <a href="/country">Country</a>
+              <NavLink to="/country">Country</NavLink>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <NavLink to="/contact">ContactUs</NavLink>
             </li>
           </ul>
         </div>
