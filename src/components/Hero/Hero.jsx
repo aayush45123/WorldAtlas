@@ -11,10 +11,11 @@ const Hero = () => {
         <div className="hero-left">
           <h2>Explore the world , one country at a time </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dignissimos, rerum praesentium. Nesciunt numquam obcaecati eum
-            distinctio. Quia.
+            Discover fascinating facts, cultural insights, and unique details
+            about every country around the globe. Start your journey of
+            exploration and expand your global knowledge.
           </p>
+
           <button className="start-exploring">Start Exploring </button>
         </div>
         <div className="hero-right">
