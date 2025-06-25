@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import hero from "../../assets/hero.jpg";
 import Card from "../Card/Card";
 import Title from "../Title/Title";
 
@@ -17,7 +18,7 @@ const Hero = () => {
           <button className="start-exploring">Start Exploring </button>
         </div>
         <div className="hero-right">
-<img src="/WorldAtlas/hero.jpg" alt="" />
+          <img src={hero} alt="Hero" />
         </div>
       </div>
       <Title
