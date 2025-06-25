@@ -4,7 +4,6 @@
 Explore the world, one country at a time.  
 WorldAtlas is a beautifully designed React-based web app that allows users to browse countries, view flags, filter by region, search by name, and explore detailed info.
 
-![Screenshot](./public/WorldAtlas.png)
 
 ## 🚀 Features
 
@@ -114,7 +113,21 @@ WorldAtlas/
 
 ## 📸 Screenshots
 
-_Add screenshots in the `/public` folder and reference them like below:_
+### 🌍 Home Page
+![Home Page](images/home.png)
+
+### 🗺️ Country Page
+![Country Page](images/country.png)
+
+### 🔍 Filtered Country View
+![Filtered Country](images/filteredCountry.png)
+
+### ℹ️ About Page
+![About Page](images/about.png)
+
+### 📞 Contact Page
+![Contact Page](images/contact.png)
+
 
 ```md
 ![Explore Page](./public/WorldAtlas.png)
