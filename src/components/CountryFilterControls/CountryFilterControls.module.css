@@ -1,0 +1,40 @@
+.controlsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: transparent;
+}
+
+.searchBar {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #40e0ff;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+.sortButtons button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #40e0ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sortButtons button:hover {
+  background: #ff40e4;
+}
+
+.dropdown {
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #40e0ff;
+  color: white;
+}

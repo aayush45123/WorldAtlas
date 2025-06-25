@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "countryName": "India",
+    "capital": "New Delhi",
+    "population": 1393409038,
+    "interestingFact": "India is home to the world’s largest democracy."
+  },
+  {
+    "id": 2,
+    "countryName": "United States",
+    "capital": "Washington, D.C.",
+    "population": 331002651,
+    "interestingFact": "The Statue of Liberty was a gift from France to the USA."
+  },
+  {
+    "id": 3,
+    "countryName": "France",
+    "capital": "Paris",
+    "population": 67407241,
+    "interestingFact": "The Eiffel Tower was once the tallest man-made structure in the world."
+  },
+  {
+    "id": 4,
+    "countryName": "China",
+    "capital": "Beijing",
+    "population": 1444216107,
+    "interestingFact": "The Great Wall of China is over 13,000 miles long."
+  },
+  {
+    "id": 5,
+    "countryName": "Brazil",
+    "capital": "Brasília",
+    "population": 212559417,
+    "interestingFact": "Brazil is home to the Amazon Rainforest, the largest tropical rainforest on Earth."
+  },
+  {
+    "id": 6,
+    "countryName": "Russia",
+    "capital": "Moscow",
+    "population": 145912025,
+    "interestingFact": "Russia is the largest country in the world by area."
+  },
+  {
+    "id": 7,
+    "countryName": "Egypt",
+    "capital": "Cairo",
+    "population": 104124440,
+    "interestingFact": "Egypt is home to the ancient pyramids and the Great Sphinx of Giza."
+  },
+  {
+    "id": 8,
+    "countryName": "Japan",
+    "capital": "Tokyo",
+    "population": 125960000,
+    "interestingFact": "Japan has more than 100 active volcanoes."
+  },
+  {
+    "id": 9,
+    "countryName": "Germany",
+    "capital": "Berlin",
+    "population": 83166711,
+    "interestingFact": "Germany is known for its automotive industry and Oktoberfest."
+  },
+  {
+    "id": 10,
+    "countryName": "Australia",
+    "capital": "Canberra",
+    "population": 25687041,
+    "interestingFact": "Australia is home to the Great Barrier Reef, the world's largest coral reef system."
+  },
+  {
+    "id": 11,
+    "countryName": "Italy",
+    "capital": "Rome",
+    "population": 59554023,
+    "interestingFact": "Italy is known for its historical landmarks like the Colosseum and Leaning Tower of Pisa."
+  },
+  {
+    "id": 12,
+    "countryName": "United Kingdom",
+    "capital": "London",
+    "population": 68207116,
+    "interestingFact": "The UK is home to Big Ben and the world's oldest royal residence, Windsor Castle."
+  }
+]

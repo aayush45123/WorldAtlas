@@ -1,0 +1,128 @@
+.detailContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  min-height: 100vh;
+  background: transparent;
+}
+
+.detailCard {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  align-items: center;
+}
+
+.flagImage {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+.detailsRight {
+  /* flex: 1; */
+  color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background: transparent;
+}
+
+.countryName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #40e0ff, #ff40e4, #40e0ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s ease-in-out infinite;
+}
+
+.detailInfo p {
+  margin: 0.6rem 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  background: transparent;
+}
+
+.detailInfo span {
+  font-weight: 600;
+  color: #40e0ff;
+  background: transparent;
+}
+.detailsRight *:not(.countryName) {
+  background: transparent !important;
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .detailCard {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .flagImage {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .countryName {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .detailInfo p {
+    font-size: 1rem;
+  }
+}
+
+.backButtonWrapper {
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.backButton {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #40e0ff, #ff40e4);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(64, 224, 255, 0.3);
+}
+
+.backButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 64, 228, 0.4);
+}

@@ -1,0 +1,22 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.countryCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  place-items: center;
+  background: transparent;
+
+  /* 👇 Animation */
+  animation: fadeInUp 0.6s ease-in-out;
+}

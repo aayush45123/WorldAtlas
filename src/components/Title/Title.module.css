@@ -1,0 +1,241 @@
+/* Title.css - Matching the hero and card theme */
+
+.titleContainer {
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  background: transparent;
+}
+
+/* Subtitle styling */
+.titleSubtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #667eea;
+  margin: 0 0 1rem 0;
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.titleSubtitle::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+/* Main heading styling */
+.titleHeading {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  position: relative;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* Alternative solid color heading if gradient causes issues */
+.titleHeading-solid {
+  color: white;
+  background: transparent;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Decorative elements */
+.titleContainer::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(102, 126, 234, 0.1) 0%,
+    rgba(118, 75, 162, 0.05) 50%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  z-index: -1;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* Hover effect for the entire container */
+.titleContainer:hover .titleSubtitle {
+  color: #764ba2;
+  transform: translateY(-2px);
+}
+
+.titleContainer:hover .titleHeading {
+  transform: translateY(-2px);
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .titleContainer {
+    padding: 2rem 1rem;
+  }
+
+  .titleSubtitle {
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.75rem;
+  }
+
+  .titleSubtitle::before {
+    width: 40px;
+    bottom: -6px;
+  }
+
+  .titleHeading {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+
+  .titleContainer::before {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleContainer {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .titleSubtitle {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+
+  .titleSubtitle::before {
+    width: 30px;
+    bottom: -4px;
+  }
+
+  .titleHeading {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+  }
+
+  .titleContainer::before {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.2;
+  }
+}
+
+/* Alternative styles for different sections */
+.titleContainer-dark {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.titleContainer-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+/* Icon support (if you want to add icons) */
+.titleContainer .title-icon {
+  font-size: 3rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+  display: block;
+  animation: fadeInUp 0.8s ease-out 0.1s both;
+}
+
+/* Loading state */
+.titleContainer-loading .titleSubtitle,
+.titleContainer-loading .titleHeading {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  background-size: 200% 100%;
+  animation: loading-shimmer 1.5s infinite;
+  /* -webkit-background-clip: unset; */
+  -webkit-text-fill-color: unset;
+  color: transparent;
+}
+
+@keyframes loading-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Utility classes for different use cases */
+.titleContainer-small {
+  padding: 2rem 1rem;
+}
+
+.titleContainer-small .titleSubtitle {
+  font-size: 0.9rem;
+}
+
+.titleContainer-small .titleHeading {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.titleContainer-large {
+  padding: 4rem 2rem;
+}
+
+.titleContainer-large .titleSubtitle {
+  font-size: 1.2rem;
+}
+
+.titleContainer-large .titleHeading {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
